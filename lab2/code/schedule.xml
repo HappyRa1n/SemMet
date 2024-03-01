@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schedule>
+    <day name="Понедельник">
+        <lesson>
+            <subject>Математический анализ</subject>
+            <classroom>102</classroom>
+            <instructor>Копытов С.В.</instructor>
+            <start_time>09:40</start_time>
+            <end_time>11:10</end_time>
+            <type>лекция</type>
+        </lesson>
+        <lesson>
+            <subject>Операционные системы</subject>
+            <classroom>201</classroom>
+            <instructor>Городилов А.Ю.</instructor>
+            <start_time>11:30</start_time>
+            <end_time>13:00</end_time>
+            <type>лекция</type>
+        </lesson>
+		<lesson>
+            <subject>Операционные системы</subject>
+            <classroom>103</classroom>
+            <instructor>Иванов А.А.</instructor>
+            <start_time>13:30</start_time>
+            <end_time>15:00</end_time>
+            <type>практика</type>
+        </lesson>
+    </day>
+	<day name="Вторник">
+        <lesson>
+            <subject>История</subject>
+            <classroom>102</classroom>
+            <instructor>Сидоров И.И.</instructor>
+            <start_time>09:40</start_time>
+            <end_time>11:10</end_time>
+            <type>лекция</type>
+        </lesson>
+    </day>
+	<day name="Среда">
+        <lesson>
+            <subject>Психология</subject>
+            <classroom>512</classroom>
+            <instructor>Гаврилов С.В.</instructor>
+            <start_time>09:40</start_time>
+            <end_time>11:10</end_time>
+            <type>лекция</type>
+        </lesson>
+		 <lesson>
+            <subject>Психология</subject>
+            <classroom>102</classroom>
+            <instructor>Васильев А.А.</instructor>
+            <start_time>13:30</start_time>
+            <end_time>15:00</end_time>
+            <type>практика</type>
+        </lesson>
+    </day>
+	<day name="Четверг">
+         <lesson>
+            <subject>Параллельное программироваие</subject>
+            <classroom>102</classroom>
+            <instructor>Городилов А.Ю.</instructor>
+            <start_time>09:40</start_time>
+            <end_time>11:10</end_time>
+            <type>лекция</type>
+        </lesson>
+        <lesson>
+            <subject>Параллельное программироваие</subject>
+            <classroom>201</classroom>
+            <instructor>Городилов А.Ю.</instructor>
+            <start_time>11:30</start_time>
+            <end_time>13:00</end_time>
+            <type>лекция</type>
+        </lesson>
+    </day>
+	<day name="Пятница">
+         <lesson>
+            <subject>python для анализа данных</subject>
+            <classroom>102</classroom>
+            <instructor>Городилов А.Ю.</instructor>
+            <start_time>09:40</start_time>
+            <end_time>11:10</end_time>
+            <type>лекция</type>
+        </lesson>
+    </day>
+	<day name="Пятница">
+         <lesson>
+            <subject>python для анализа данных</subject>
+            <classroom>102</classroom>
+            <instructor>Васильев А.А.</instructor>
+            <start_time>09:40</start_time>
+            <end_time>11:10</end_time>
+            <type>практика</type>
+        </lesson>
+    </day>
+</schedule>

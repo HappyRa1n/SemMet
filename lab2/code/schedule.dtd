@@ -1,0 +1,10 @@
+<!ELEMENT schedule (day*)>
+<!ELEMENT day (lesson*)>
+<!ATTLIST day name CDATA #REQUIRED>
+<!ELEMENT lesson (subject, classroom, instructor, start_time, end_time, type)>
+<!ELEMENT subject (#PCDATA)>
+<!ELEMENT classroom (#PCDATA)>
+<!ELEMENT instructor (#PCDATA)>
+<!ELEMENT start_time (#PCDATA)>
+<!ELEMENT end_time (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
