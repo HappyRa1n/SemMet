@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/happy/ontologies/2024/2/untitled-ontology-12"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/happy/ontologies/2024/2/untitled-ontology-12">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">акуцион</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Beatles"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nirvana"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Аудиокасеты"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Боксеры"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Гитары"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Дешевые"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Дорогие"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Знаменитости"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Лоты"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#МузыкальныеГруппы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Письма"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Фотографии"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#известныеЛюди"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#владел"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#принадлежал"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#цена"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Али"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Кобейн"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#КортниЛав"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ленон"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Фрезер"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Харисон"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#гибсонSG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#интервьюЛенона"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#письмоОтКуртаКортни"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#фотоАлиИФрезера"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Дешевые"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Лоты"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#цена"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:float"/>
+                    <FacetRestriction facet="&xsd;maxExclusive">
+                        <Literal datatypeIRI="&xsd;integer">50</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Дорогие"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Лоты"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#цена"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:float"/>
+                    <FacetRestriction facet="&xsd;minInclusive">
+                        <Literal datatypeIRI="&xsd;integer">50</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Beatles"/>
+        <Class IRI="#МузыкальныеГруппы"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nirvana"/>
+        <Class IRI="#МузыкальныеГруппы"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Аудиокасеты"/>
+        <Class IRI="#Лоты"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Боксеры"/>
+        <Class IRI="#Знаменитости"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Гитары"/>
+        <Class IRI="#Лоты"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Знаменитости"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Лоты"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#МузыкальныеГруппы"/>
+        <Class IRI="#Знаменитости"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Письма"/>
+        <Class IRI="#Лоты"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Фотографии"/>
+        <Class IRI="#Лоты"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#известныеЛюди"/>
+        <Class IRI="#Знаменитости"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Beatles"/>
+        <Class IRI="#Nirvana"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Аудиокасеты"/>
+        <Class IRI="#Гитары"/>
+        <Class IRI="#Письма"/>
+        <Class IRI="#Фотографии"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Боксеры"/>
+        <Class IRI="#МузыкальныеГруппы"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Дешевые"/>
+        <Class IRI="#Дорогие"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Знаменитости"/>
+        <Class IRI="#Лоты"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Боксеры"/>
+        <NamedIndividual IRI="#Али"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nirvana"/>
+        <NamedIndividual IRI="#Кобейн"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#известныеЛюди"/>
+        <NamedIndividual IRI="#КортниЛав"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beatles"/>
+        <NamedIndividual IRI="#Ленон"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Боксеры"/>
+        <NamedIndividual IRI="#Фрезер"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Beatles"/>
+        <NamedIndividual IRI="#Харисон"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Гитары"/>
+        <NamedIndividual IRI="#гибсонSG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Дорогие"/>
+        <NamedIndividual IRI="#гибсонSG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Аудиокасеты"/>
+        <NamedIndividual IRI="#интервьюЛенона"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Дорогие"/>
+        <NamedIndividual IRI="#интервьюЛенона"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Дешевые"/>
+        <NamedIndividual IRI="#письмоОтКуртаКортни"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Письма"/>
+        <NamedIndividual IRI="#письмоОтКуртаКортни"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Дешевые"/>
+        <NamedIndividual IRI="#фотоАлиИФрезера"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Фотографии"/>
+        <NamedIndividual IRI="#фотоАлиИФрезера"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#владел"/>
+        <NamedIndividual IRI="#Али"/>
+        <NamedIndividual IRI="#фотоАлиИФрезера"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#владел"/>
+        <NamedIndividual IRI="#Кобейн"/>
+        <NamedIndividual IRI="#письмоОтКуртаКортни"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#владел"/>
+        <NamedIndividual IRI="#КортниЛав"/>
+        <NamedIndividual IRI="#письмоОтКуртаКортни"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#владел"/>
+        <NamedIndividual IRI="#Ленон"/>
+        <NamedIndividual IRI="#интервьюЛенона"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#владел"/>
+        <NamedIndividual IRI="#Фрезер"/>
+        <NamedIndividual IRI="#фотоАлиИФрезера"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#владел"/>
+        <NamedIndividual IRI="#Харисон"/>
+        <NamedIndividual IRI="#гибсонSG"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#принадлежал"/>
+        <NamedIndividual IRI="#гибсонSG"/>
+        <NamedIndividual IRI="#Харисон"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#принадлежал"/>
+        <NamedIndividual IRI="#интервьюЛенона"/>
+        <NamedIndividual IRI="#Ленон"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#принадлежал"/>
+        <NamedIndividual IRI="#письмоОтКуртаКортни"/>
+        <NamedIndividual IRI="#КортниЛав"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#принадлежал"/>
+        <NamedIndividual IRI="#письмоОтКуртаКортни"/>
+        <NamedIndividual IRI="#Кобейн"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#принадлежал"/>
+        <NamedIndividual IRI="#фотоАлиИФрезера"/>
+        <NamedIndividual IRI="#Фрезер"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#принадлежал"/>
+        <NamedIndividual IRI="#фотоАлиИФрезера"/>
+        <NamedIndividual IRI="#Али"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#цена"/>
+        <NamedIndividual IRI="#гибсонSG"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">567,5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#цена"/>
+        <NamedIndividual IRI="#интервьюЛенона"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#цена"/>
+        <NamedIndividual IRI="#письмоОтКуртаКортни"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#цена"/>
+        <NamedIndividual IRI="#фотоАлиИФрезера"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">15</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#принадлежал"/>
+        <ObjectProperty IRI="#владел"/>
+    </InverseObjectProperties>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
